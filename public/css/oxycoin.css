@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+a, a:focus, a:visited {
+    color: #0288D1;
+}
+a:hover {
+	color: #F57C00;
+}
+
+.navbar-default {
+    background-color: transparent;
+}
+
+.navbar-fixed-top{
+	background-color:#0D283C;
+}
+
+.status{
+	background-color: #2B80B9;
+}
