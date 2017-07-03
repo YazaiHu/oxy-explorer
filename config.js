@@ -22,7 +22,7 @@ config.redis.port     = 6379;
 config.redis.password = '';
 
 config.cacheTTL = 20; // Time in seconds to store cache in Redis
-config.walletAddress = 'https://twallet.oxycoin.io'; // Link to wallet login
+config.walletAddress = 'https://wallet.oxycoin.io'; // Link to wallet login
 
 // Header price tickers, Currency switcher
 config.exchangeRates.enabled = true;         // Exchange rates support (true - enabled, false - disabled)
