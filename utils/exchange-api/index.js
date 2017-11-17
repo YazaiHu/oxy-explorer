@@ -67,14 +67,16 @@ module.exports = function (config) {
             ]
         },
         'OXYBTC' : {
+            // TODO: This is obviously not bittrex but in order to
+            // quickly fix the problem lets keep it this way.
             bittrex : [
-                'Bittrex',
-                'https://bittrex.com/api/v1.1/public/getticker?market=BTC-OXY',
+                'CoinMarketCap',
+                'https://api.coinmarketcap.com/v1/ticker/oxycoin/',
                 function (res, cb) {
-                    if (!res.success) {
-                        return cb(res.error);
+                    if (!res || res.length === 0) {
+                        return cb('Empty response from coinmaketcap');
                     } else {
-                        return cb(null, res.result.Last);
+                        return cb(null, res[0].price_btc);
                     }
                 }
             ]
