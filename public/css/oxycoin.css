@@ -9,11 +9,6 @@ a:hover {
 .navbar-default {
     background-color: #3d69c4;
 }
-.navbar-brand .logo {
-    height: 80px;
-    width: 180px;
-    padding: 0;
-}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
   background-color: #3d69c4;
   color: white;
