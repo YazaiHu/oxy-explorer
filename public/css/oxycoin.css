@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 a, a:focus, a:visited {
-    color: #3d69c4;
+    color: #316FC5;
 }
 a:hover {
-	color: #f2ba15;
+	color: #319EFF;
 }
 .navbar-default {
     background-color: #3d69c4;
@@ -198,6 +198,18 @@ a.sort-order span {
 }
 .txvalues-success {
     background-color: #f2ba15;
+}
+.forging-total.green {
+    background-color: #4DBA54;
+}
+.forging-total.orange {
+    background-color: #F5A623;
+}
+.forging-total.red {
+    background-color: #CC394B;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top: hidden;
 }
 #footer{
 	background-color: #3d69c4;
