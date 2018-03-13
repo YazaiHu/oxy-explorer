@@ -2,10 +2,17 @@
   {{$root.flashMessage}}
 </div>
 <section data-ng-controller="IndexController">
+  <div class="container">
+    <form id="search-form" data-ng-controller="SearchController" class="navbar-form navbar-left hidden-xs" role="search" data-ng-submit="search()">
+      <div class="form-group" data-ng-class="{'has-error': badQuery}">
+        <input id="search" type="text" class="form-control" data-ng-model="q" data-ng-class="{'loading': loading}" placeholder="Find a block, transaction, address or delegate" data-ng-submit="search()">
+      </div>
+      <div class="no_matching text-danger" data-ng-if="badQuery">No matching records found!</div>
+    </form>
+  </div>
+
   <div id="home" class="row">
     <div class="col-xs-12 col-md-12">
-      <div data-ng-include src="'/views/index/search.html'"></div>
-
       <h1>Latest Transactions</h1>
 
       <div class="table-responsive">

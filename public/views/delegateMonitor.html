@@ -85,7 +85,7 @@
               <div class="pull-left total-forged">
                 <p class="small-title">Total Forged <span class="text-muted">({{currency.symbol}})</span></p>
                 <p class="big-details">
-                  <span class="lisk">{{totalForged || 0 | currency:currency}}</span>
+                  <span class="lisk">{{totalForged || 0 | currency:currency:2}}</span>
                 </p>
                 <p class="text-muted total-active">between {{totalActive || 0 }} active delegates</p>
               </div>
@@ -101,7 +101,7 @@
                   <a data-ng-href="/address/{{bestForger.address}}" data-ng-switch-when="true">{{bestForger.username}}</a>
                   <span class="text-muted" data-ng-switch-when="false">N/A</span>
                 </p>
-                <p class="text-muted lisk">{{bestForger.forged || 0 | currency:currency}} {{currency.symbol}} forged</p>
+                <p class="text-muted lisk">{{bestForger.forged || 0 | currency:currency:2}} {{currency.symbol}} forged</p>
                 <p class="text-muted time-since">since registration</p>
               </div>
             </div>
@@ -150,7 +150,7 @@
                 <p class="small-title">Latest Votes</span>
 
                 <div class="table-responsive">
-                  <table class="table table-condensed votes">
+                  <table class="table table-condensed table-striped votes">
                     <thead>
                       <tr>
                         <th>Voter</th>
@@ -189,7 +189,7 @@
                 <p class="small-title">Newest Delegates</span>
 
                 <div class="table-responsive">
-                  <table class="table table-condensed registrations">
+                  <table class="table table-condensed table-striped registrations">
                     <thead>
                       <tr>
                         <th>Delegate</th>
@@ -293,7 +293,7 @@
                   <td>{{d.rate}}</td>
                   <td><a data-ng-if="d.proposal" class="glyphicon glyphicon-user proposal-icon" data-ng-href="https://forum.lisk.io/viewtopic.php?f=48&t={{d.proposal.topic}}" title="{{d.proposal.description}}" target="_new"></a> <a data-ng-href="/address/{{d.address}}">{{d.username}}</a></td>
                   <td class="hidden-xs"><span class="text-muted">{{d.address}}</span></td>
-                  <td class="hidden-xs hidden-sm">{{d.forged | currency:currency}} <span class="text-muted">{{currency.symbol}}</span></td>
+                  <td class="hidden-xs hidden-sm">{{d.forged | currency:currency:2}} <span class="text-muted">{{currency.symbol}}</span></td>
                   <td class="hidden-xs hidden-sm">{{d.forgingTime | forgingTime}}</td>
                   <td><i forging-status="d.forgingStatus"></i></td>
                   <td>{{d.productivity || 0}}%</td>

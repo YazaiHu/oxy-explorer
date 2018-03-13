@@ -1,20 +1,219 @@
 @charset "UTF-8";
 
 a, a:focus, a:visited {
-    color: #0288D1;
+    color: #316FC5;
 }
 a:hover {
-	color: #F57C00;
+	color: #319EFF;
 }
-
 .navbar-default {
-    background-color: transparent;
+    background-color: #3d69c4;
 }
-
-.navbar-fixed-top{
-	background-color:#0D283C;
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
+  background-color: #3d69c4;
+  color: white;
 }
-
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: #3d69c4;
+  color: white;
+}
+.navbar-default .navbar-nav>li>a:focus {
+  background-color: #3d69c4;
+  color: white;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+  background-color: #3d69c4;
+  color: white;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    background-color: #3d69c4;
+    color: white;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    background-color: #3d69c4;
+    color: white;
+  }
+}
+.nav-tabs.nav-justified>.active>a,
+.nav-tabs.nav-justified>.active>a:focus {
+  color: white;
+  background-color: #3d69c4;
+}
+.nav-tabs.nav-justified>.active>a:hover {
+  color: white;
+  background-color: #3d69c4;
+}
 .status{
-	background-color: #2B80B9;
+	background-color: #3d69c4;
+	float: none;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+  color: white;
+  background-color: #3d69c4;
+}
+#ngProgress {
+  background-color: #f2ba15 !important;
+  color: #f2ba15 !important;
+}
+#search.loading {
+  color: white;
+  background-color: #3d69c4;
+  -webkit-animation-name: loading;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes loading {
+  from { background-color: #3d69c4; }
+  to { background-color: #38B449; }
+}
+
+@keyframes loading {
+    from { background-color: #3d69c4; }
+    to { background-color: #38B449; }
+}
+.btn-primary, a.btn-primary {
+  color: #fff;
+  background-color: #3d69c4;
+  border-color: #3d69c4;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #3d69c4;
+  border-color: #3d69c4;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #3d69c4;
+  border-color: #3d69c4;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #3d69c4;
+  border-color: #3d69c4;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: #fff;
+  background-color: #3d69c4;
+  border-color: #3d69c4;
+}
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+ fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+ fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+ fieldset[disabled] .btn-primary.focus {
+  background-color: #3d69c4;
+  border-color: #3d69c4;
+}
+.btn-primary .badge {
+  color: #3d69c4;
+  background-color: #fff;
+}
+.txvalues-primary {
+  background-color: #3d69c4;
+}
+.progress-bar-loading {
+  background-color: #3d69c4;
+}
+.no_matching {
+  background-color: #3d69c4;
+}
+.tooltip .tooltip-inner {
+  color: white;
+  background-color: #3d69c4;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: #3d69c4;
+}
+a.sort-order span {
+  color: #3d69c4;
+}
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus {
+  color: #fff;
+  background-color: #3d69c4;
+}
+.nav-pills>li>a,
+.nav-pills>li>a:hover,
+.nav-pills>li>a:focus {
+  color: #3d69c4;
+  background-color: white;
+}
+.progress-bar-forging {
+  background-color: #3d69c4;
+}
+.exchanges .nav-tabs.nav-justified>.active>a,
+.exchanges .nav-tabs.nav-justified>.active>a:hover,
+.exchanges .nav-tabs.nav-justified>.active>a:focus {
+  color: #3d69c4;
+  background-color: white;
+}
+#stockChart .amChartsButtonSelected {
+  background-color: #3d69c4;
+  border-color: #3d69c4;
+}
+#stockChart .amChartsEmpty,
+#depthChart .amChartsEmpty {
+  width: 100%;
+  line-height: 500px;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 24px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+.btn-durations {
+  margin-top: 1em;
+}
+.btn-durations .active {
+  color: white;
+  background-color: #3d69c4;
+}
+.btn-durations .active:hover {
+  color: white;
+  background-color: #3d69c4;
+}
+.txvalues-success {
+    background-color: #f2ba15;
+}
+.forging-total.green {
+    background-color: #4DBA54;
+}
+.forging-total.orange {
+    background-color: #F5A623;
+}
+.forging-total.red {
+    background-color: #CC394B;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top: hidden;
+}
+#footer{
+	background-color: #3d69c4;
+}
+#footer .col-right a {
+    color: #FFF;
 }
