@@ -9872,12 +9872,6 @@ a:hover {
   margin-top: 23px;
 }
 
-@media (max-width: 1200px) {
-  .status {
-    display: none;
-  }
-}
-
 @media (max-width: 767px) {
   .navbar-form {
     width: auto;

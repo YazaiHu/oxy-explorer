@@ -3,7 +3,7 @@
 </div>
 <section data-ng-controller="IndexController">
   <div class="container">
-    <form id="search-form" data-ng-controller="SearchController" class="navbar-form navbar-left hidden-xs" role="search" data-ng-submit="search()">
+    <form id="search-form" data-ng-controller="SearchController" class="navbar-form navbar-left" role="search" data-ng-submit="search()">
       <div class="form-group" data-ng-class="{'has-error': badQuery}">
         <input id="search" type="text" class="form-control" data-ng-model="q" data-ng-class="{'loading': loading}" placeholder="Find a block, transaction, address or delegate" data-ng-submit="search()">
       </div>
